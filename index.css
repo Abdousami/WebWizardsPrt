@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    color: #010718;
+}
+.inttt img{
+    width: 9vh ;
+    height: 10vh;
+}
+.inttt{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1vw;
+}
+.inttt h2{
+    color: #010718;
+    font-weight: bolder;
+    font-size: 21px;
+    margin-top: 2vh;
+}
+
+#ttt{
+    background-color: #4070f4;
+    grid-area: nav;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 18vh;
+}
+.navas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 7vh;
+    height: 40vh;
+}
+.navas a{
+    font-weight:bolder ;
+}
+
+.links:hover{
+    background-color: #010718;
+    color: #4070f4;
+    border-radius: 15px;
+    padding: 1.3vw 3vw;
+}
+h1 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+}
+h1 span {
+    color: #4070f4;
+    position: relative;
+}
+h1 span::before {
+    content: "";
+    height: 30px;
+    width: 2px;
+    position: absolute;
+    top: 50%;
+    right: -8px;
+    background: #4070f4;
+    transform: translateY(-45%);
+    animation: blink 0.7s infinite;
+}
+h1 span.stop-blinking::before {
+    animation: none;
+}
+@keyframes blink {
+    50% { opacity: 0 }
+}
+body{
+    background-color: #010718;
+}
+.yy{
+    display: grid;
+    grid-template-columns: 20vw 50vw 30vw;
+    grid-template-areas: 'nav div img';
+    align-items: center;
+}
+.ntimg{
+    background-color: #4070f4;
+    border-radius: 50%;
+    width: 30vw;
+    height: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: 6;
+    object-fit:contain;
+    grid-area: img;
+}
+.ntimg img{
+    width: 80%;
+}
+.none{
+    grid-area: div;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5vh;
+}
+.none a{
+    color:#4070f4;
+    border: #4070f4 solid 2px;
+    border-radius: 15px;
+    padding: 1.3vw 3vw;
+    font-weight: bold;
+    
+}
+.ntbtn  a:hover{
+    background-color: #4070f4;
+    color: #010718;
+}
+.inttt h2::first-letter{
+    color: #fff;
+    font-size: 2.3rem;
+}
+h3{
+    color: #fff;
+    color: #4070f4;
+}
+.upbtn h2{
+    color: #fff;
+    font-size: 2rem ;
+}
+.upbtn{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2vh;
+}
+.ntbtn{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 3vw;
+
+}
+.foot{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45%;
+}
+i{
+    color: #010718;
+    font-size: 2em;
+    font-weight: 700;
+    cursor: pointer;
+}
+#btn{
+    background-color: transparent;
+    border: none;
+}
+#btn1{
+    display: none;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 0%;
+    left: 0;
+}
+#btn1 i{
+    color: #4070f4;
+}
+
+@media (max-width: 1107px ) and (min-width:664px) {
+    .inttt h2{
+        font-size: 1.1rem;
+    }
+    .inttt h2::first-letter{
+        font-size: 1.3rem;
+    }
+    .yy{
+        display: grid;
+        grid-template-columns: 28vw 40vw 28vw;
+        justify-content: flex-start;
+        gap: 2vw;
+        grid-template-areas: 'nav div img';
+        align-items: center;
+    }
+    .ntimg{
+        width: 28vw;
+        height: 28vw;
+    }
+}
+@media (max-width: 664px )  {
+    .inttt h2{
+        font-size: 1.1rem;
+    }
+    .inttt h2::first-letter{
+        font-size: 1.3rem;
+    }
+    .yy{
+        display: grid;
+        grid-template-columns: 28vw 40vw 28vw;
+        justify-content: flex-start;
+        gap: 2vw;
+        grid-template-areas: 'nav div img';
+        align-items: center;
+    }
+    .ntimg{
+        width: 28vw;
+        height: 28vw;
+    }
+    .footi{
+        gap: 15px;
+    }
+    .footi i{
+        font-size: 1.5em;
+    }
+}

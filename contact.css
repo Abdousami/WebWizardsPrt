@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+}
+body{
+    background-color: #4070f4;
+}
+a{
+    text-decoration: none;
+    color: #010718;
+}
+nav h2{
+    color: #010718;
+    font-weight: bolder;
+    margin-left: 100px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4070f4;
+    padding: 10px;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    font-weight: bolder;
+    margin-right: 100px;
+}
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 50;
+}
+nav a:hover{
+    background-color: #010718;
+    color: #4070f4;
+    padding: 5px;
+    border-radius: 8px;
+
+}
+.section{
+    padding: 100px 100px 100px 100px;
+    background-color: #4070f4;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.all{
+    border: #010718 solid 3px;
+    padding: 30px;
+    border-radius: 30px ;
+    background-color: #010718;
+    width: 60%;
+}
+.section h1{
+    font-size: 2em;
+    font-weight: 700;
+    border-left: #4070f4 5px solid;
+    padding-left:10px;
+    color: #4070f4;
+    background-color: #010718;
+    margin-bottom: 5vh;
+}
+h4{
+    color: #fff;
+    background-color: #010718;
+}
+
+.btn {
+    display: none;
+}
+
+.send{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: column;
+    gap: 5vh;
+    width: 100%;
+    
+}
+input[type='email'],input[type='text']{
+    width: 100%;
+    background-color: #4070f4;
+    border: #fff solid 2px;
+    border-radius: 6px;
+    height: 5vh;
+    color: #fff;
+    font-weight: 600;
+}
+textarea{
+    width: 100%;
+    background-color: #4070f4;
+    border: #fff solid 2px;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: 600;
+}
+input[value='Submit']{
+    color: #fff;
+    background-color: #4070f4;
+    border-radius: 15px;
+    padding: 1vw 3vw;
+    border: #fff solid 2px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+input::placeholder , textarea::placeholder{
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-indent: 10px;
+}
+#btn, #btn1{
+    display: none;
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+    border-radius:7px ;
+    color: #010718;
+    font-size: 1.3rem;
+}
+
+@media (max-width:819px) {
+   
+    .all{
+        width: 100%;
+        padding: 30px 0% 30px 0%;
+    }
+    .section{
+        padding-left: 2%; 
+        padding-right: 2%;
+        padding-top: 60px;
+    }
+    nav h2{
+        font-size: medium;
+        color: #000;
+        margin-left: 0;
+    }
+    .nav{
+        display: none;
+    }
+    input[type='email'],input[type='text'], textarea{
+        width: 90%;
+    }
+
+    .btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 25px;
+        width: fit-content;
+        background-color: #4070f4;
+        font-size: medium;
+        font-weight: bold;
+        border: 2px solid #010718;
+        border-radius: 7px;
+        padding: 5px;
+        overflow: hidden;
+        height: fit-content;
+        display: none;
+    }
+   
+    ul{
+        list-style: none;
+    }
+    #btn{
+        display: flex;
+    }
+    .send{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+        width: 100%;
+        
+    }
+
+}
